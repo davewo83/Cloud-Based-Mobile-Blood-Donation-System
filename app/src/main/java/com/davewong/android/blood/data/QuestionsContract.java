@@ -16,11 +16,11 @@ public class QuestionsContract {
             // Date, stored as Text with format yyyy-MM-dd
             public static final String COLUMN_DATETEXT = "date";
             // Weather id as returned by API, to identify the icon to be used
-            public static final Boolean COLUMN_Q1 = false;
-            public static final Boolean COLUMN_Q2 = false;
-            public static final Boolean COLUMN_Q3 = false;
-            public static final Boolean COLUMN_Q4 = false;
-            public static final Boolean COLUMN_Q5 = false;
+            public static final String COLUMN_Q1 = "q1";
+            public static final String COLUMN_Q2 = "q2";
+            public static final String COLUMN_Q3 = "q3";
+            public static final String COLUMN_Q4 = "q4";
+            public static final String COLUMN_Q5 = "q5";
         }
 
     public static final class DetailsEntry implements BaseColumns {
@@ -34,7 +34,6 @@ public class QuestionsContract {
         // Weather id as returned by API, to identify the icon to be used
         public static final String COLUMN_FN = "dave";
         public static final String COLUMN_SN = "wong";
-        public static final Boolean COLUMN_Q3 = false;
     }
 
 }
