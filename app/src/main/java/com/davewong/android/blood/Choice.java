@@ -2,6 +2,7 @@ package com.davewong.android.blood;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -10,12 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class Questions extends Activity {
+public class Choice extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questions);
+        setContentView(R.layout.activity_choice);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
@@ -23,14 +24,21 @@ public class Questions extends Activity {
         }
     }
 
+    public void OnDonorClick (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), Details.class);
+        startActivity(nextScreen);
+    }
 
-
+    public void OnDonationClick (View view) {
+        Intent nextScreen = new Intent(getApplicationContext(), DonorList.class);
+        startActivity(nextScreen);
+    }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.questions, menu);
+        getMenuInflater().inflate(R.menu.menu_choice, menu);
         return true;
     }
 
@@ -40,9 +48,12 @@ public class Questions extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -56,8 +67,8 @@ public class Questions extends Activity {
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_questions, container, false);
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_choice, container, false);
             return rootView;
         }
     }

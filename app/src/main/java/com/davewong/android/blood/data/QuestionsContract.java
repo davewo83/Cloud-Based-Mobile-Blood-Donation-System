@@ -34,6 +34,12 @@ public class QuestionsContract {
         // Weather id as returned by API, to identify the icon to be used
         public static final String COLUMN_FN = "dave";
         public static final String COLUMN_SN = "wong";
+        public static final String COLUMN_HN = "dave";
+        public static final String COLUMN_PC = "dave";
+        public static final String COLUMN_EM = "dave";
+        public static final String COLUMN_PN = "dave";
+        public static final String COLUMN_DB = "dave";
+        public static final String COLUMN_SX = "dave";
     }
 
 }

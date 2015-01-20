@@ -29,7 +29,14 @@ public class QuestionsDbHelper extends SQLiteOpenHelper {
                 DetailsEntry.COLUMN_DON_KEY + " TEXT NOT NULL, " +
                 DetailsEntry.COLUMN_DATETEXT + " TEXT NOT NULL, " +
                 DetailsEntry.COLUMN_FN + " TEXT NOT NULL, " +
-                DetailsEntry.COLUMN_SN + " TEXT NOT NULL); ";
+                DetailsEntry.COLUMN_SN + " TEXT NOT NULL, " +
+                DetailsEntry.COLUMN_HN + " TEXT NOT NULL, " +
+                DetailsEntry.COLUMN_PC + " TEXT NOT NULL, " +
+                DetailsEntry.COLUMN_EM + " TEXT NOT NULL, " +
+                DetailsEntry.COLUMN_PN + " TEXT NOT NULL, " +
+                DetailsEntry.COLUMN_DB + " TEXT NOT NULL, " +
+                DetailsEntry.COLUMN_SX + " TEXT NOT NULL);";
+
 
         final String SQL_CREATE_QUESTIONS_TABLE = "CREATE TABLE " + QuestionsEntry.TABLE_NAME + " (" +
                 // Why AutoIncrement here, and not above?
