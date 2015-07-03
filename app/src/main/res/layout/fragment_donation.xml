@@ -1,0 +1,48 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.davewong.android.blood.Donation$PlaceholderFragment">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please select your required option. Thanks."
+            android:id="@+id/textView"
+            android:gravity="center_horizontal" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:drawableTop="@drawable/ic_action_user"
+            android:text="Donor Details"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:onClick="OnDetClick" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:drawableTop="@drawable/ic_action_photo"
+            android:onClick="ScanButtonClick"
+            android:text="Scan Donation"/>
+    </TableRow>
+
+</TableLayout>

@@ -21,6 +21,18 @@
         <activity
             android:name=".Questions"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Details"
+            android:label="@string/title_activity_details" >
+        </activity>
+        <activity
+            android:name=".Broadcast"
+            android:label="@string/title_activity_broadcast" >
+        </activity>
+        <activity
+            android:name=".Choice"
+            android:label="@string/title_activity_choice" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,8 +40,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Details"
-            android:label="@string/title_activity_details" >
+            android:name=".Donation"
+            android:label="@string/title_activity_donation" >
+        </activity>
+        <activity
+            android:name=".DonorList"
+            android:label="@string/title_activity_donor_list" >
+        </activity>
+        <activity
+            android:name=".DonorDetails"
+            android:label="@string/title_activity_donor_details" >
         </activity>
     </application>
 

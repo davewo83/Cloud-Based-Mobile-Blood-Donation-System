@@ -1,36 +1,125 @@
-<TableLayout
+<ScrollView
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <EditText
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please enter your details below. Thanks."
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
-        android:id="@+id/editText2" />
+        android:id="@+id/editText"
+        android:hint="First Name"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="25dp"
+        android:text="David"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWYZ" />/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:text="Wong"
+        android:hint="Surname" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:ems="10"
-        android:id="@+id/editText3" />
+        android:id="@+id/editText3"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:hint="House name/number"
+        android:text="69"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:hint="Post Code"
+        android:text="B62 0AB"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:hint="E-mail"
+        android:text="dcwouk@gmail.com"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:hint="Phone Number"
+        android:clickable="false"
+        android:text="07814850025"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/editText6"
+        android:layout_centerHorizontal="true"
+        android:hint="Date of Birth"
+        android:text="11031983"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:layout_below="@+id/editText7"
+        android:layout_centerHorizontal="true"
+        android:hint="Sex - M or F"
+        android:text="M"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/finish"
-        android:id="@+id/button"
-        android:onClick="OnButtonClick"/>
+        android:text="Next"
+        android:id="@+id/button6"
+        android:layout_below="@+id/editText8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="OnNextClick" />
 
-</TableLayout>
+</RelativeLayout>
+
+</ScrollView>
